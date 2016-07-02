@@ -15,8 +15,7 @@
 # inherit from the common rhine definitions
 include device/sony/rhine-common/BoardConfigCommon.mk
 
-# inherit from the proprietary version
-#-include vendor/sony/amami/BoardConfigVendor.mk
+USE_CAMERA_STUB := false
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D5503,amami,anami
