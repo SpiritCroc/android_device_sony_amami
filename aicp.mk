@@ -15,19 +15,16 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D5503,amami
 
-# Bootanimation
-TARGET_BOOTANIMATION_SIZE := 720x407
-
 # TWRP Recovery
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
 # Inherit AOSP Rhine common device parts
 $(call inherit-product, device/sony/amami/aosp_d5503.mk)
 
-# Inherit Omni GSM telephony parts
+# Inherit GSM telephony parts
 PRODUCT_PROPERTY_OVERRIDES += telephony.lteOnGSMDevice=1
-$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
-# Override Product Name for OmniROM
-PRODUCT_NAME := omni_amami
+# Override Product Name for AICP
+PRODUCT_NAME := aicp_amami
 PRODUCT_MODEL := Xperia Z1 Compact
