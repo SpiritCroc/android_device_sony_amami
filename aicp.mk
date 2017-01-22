@@ -26,8 +26,8 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Override Product Name for AICP
-PRODUCT_NAME := aicp_amami
-PRODUCT_MODEL := Xperia Z1 Compact
+#PRODUCT_NAME := aicp_amami
+#PRODUCT_MODEL := Xperia Z1 Compact
 
 # AICP hardware info
-TARGET_SYSTEM_PROP += device/sony/amami/aicp.system.prop
+#TARGET_SYSTEM_PROP += device/sony/amami/aicp.system.prop
